@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.elevator {
+  border: 1px solid;
+  height: 90vh;
+  width: 600px;
+}
+.top {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-display {
+  height: 6vh;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: 1s;
+}
+.bottom {
+  height: 80vh;
+  display: flex;
+}
+.b-left {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+.b-l-left {
+  width: calc(var(--door-width) * 1%);
+  background-color: gray;
+  height: inherit;
+}
+.b-l-right {
+  width: calc(var(--door-width) * 1%);
+  background-color: gray;
+  height: inherit;
+}
+.b-l-inside {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.btn1 {
+  height: 6vh;
+  width: 120px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b-right {
+  width: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b-r-buttons {
+  width: 40px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.b-r-buttons .fa-solid {
+  font-size: 35px;
+}
